@@ -1,3 +1,5 @@
+<settings>
+
 <servers>
   <server>
     <id>devops-project-devops-project</id>
@@ -29,3 +31,5 @@
     <mirrorOf>*</mirrorOf>
   </mirror>
 </mirrors>
+
+</settings>

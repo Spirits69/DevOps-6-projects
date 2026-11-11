@@ -1,0 +1,31 @@
+<servers>
+  <server>
+    <id>devops-project-devops-project</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+
+<profiles>
+  <profile>
+    <id>devops-project-devops-project</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>devops-project-devops-project</id>
+        <url>https://devops-project-241197444024.d.codeartifact.eu-central-1.amazonaws.com/maven/devops-project/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+
+<mirrors>
+  <mirror>
+    <id>devops-project-devops-project</id>
+    <name>devops-project-devops-project</name>
+    <url>https://devops-project-241197444024.d.codeartifact.eu-central-1.amazonaws.com/maven/devops-project/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
